@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Positive Energy - Sports prediction</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- fontawesome icon  -->
+        <script src="https://kit.fontawesome.com/24cf2d492a.js" crossorigin="anonymous"></script>
+        <!-- flaticon css -->
+        <link rel="stylesheet" href="fonts/flaticon.css">
+        <!-- animate.css -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/odometer.min.css">
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- responsive -->
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet" href="css/bet-slip-responsive.css">
+        <link rel="stylesheet" href="css/style 3.css">
+    </head>
+
+    <body>
+      
+      <!-- header begin -->
+        <div class="header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="left-area">
+                                <ul>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-calendar-alt"></i>
+                                        </span>
+                                        <span class="text">
+                                            <span id="date"></span>
+                                            <span id="month"></span>
+                                            <span id="year"></span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="icon">
+                                            <i class="far fa-clock"></i>
+                                        </span>
+                                        <span class="text clocks">
+                                            <span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-sm-6">
+                            <div class="right-area">
+                                <ul>
+                                    
+                                    <li>
+                                        <a class="link" href="bet-slip.html">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="dolly" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-dolly fa-w-18 fa-fw fa-2x"><path fill="currentColor" d="M575.6 309.8l-5.1-15.2c-1.4-4.2-5.9-6.5-10.1-5.1L526 301.1 451.5 77.9c-2.7-8.1-8.4-14.7-16-18.5-7.7-3.8-16.3-4.4-24.4-1.7L176.3 136l-18-50.7C146.9 53.3 116.7 32 82.8 32H8c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h74.8c20.3 0 38.4 12.8 45.2 31.9l96.7 271.9c-23.3 17.2-37.2 46.5-31.4 78.9 5.6 31.3 30.4 57 61.5 63.5 51.7 10.7 97.2-28.4 97.2-78.2 0-13.1-3.4-25.2-9-36.1l227.5-76c4.2-1.4 6.5-5.9 5.1-10.1zM187 166.1l106.4-35.5 25 74.9c1.4 4.2 5.9 6.5 10.1 5.1l15.2-5.1c4.2-1.4 6.5-5.9 5.1-10.1l-25-74.9L421.2 88l74.5 223.3-174.4 58.1C307.6 358.7 290.7 352 272 352c-6.3 0-12.3.9-18.1 2.3L187 166.1zM272 480c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48z" class=""></path></svg>
+                                            Prediction Slip
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="link" href="#">
+                                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="svg-inline--fa fa-user-circle fa-w-16 fa-fw fa-2x"><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm128 421.6c-35.9 26.5-80.1 42.4-128 42.4s-92.1-15.9-128-42.4V416c0-35.3 28.7-64 64-64 11.1 0 27.5 11.4 64 11.4 36.6 0 52.8-11.4 64-11.4 35.3 0 64 28.7 64 64v13.6zm30.6-27.5c-6.8-46.4-46.3-82.1-94.6-82.1-20.5 0-30.4 11.4-64 11.4S204.6 320 184 320c-48.3 0-87.8 35.7-94.6 82.1C53.9 363.6 32 312.4 32 256c0-119.1 96.9-216 216-216s216 96.9 216 216c0 56.4-21.9 107.6-57.4 146.1zM248 120c-48.6 0-88 39.4-88 88s39.4 88 88 88 88-39.4 88-88-39.4-88-88-88zm0 144c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z" class=""></path></svg>
+                                            Hi, Mr Moyo
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar" class="header-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 d-xl-flex d-lg-flex d-block align-items-center">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-6 d-xl-block d-lg-block d-flex align-items-center">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <h1 style="color:white"><em>Positive</em><span style="color:#f81b64">Bets</span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-6 d-xl-none d-lg-none d-block">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="mainmenu">
+                                <nav class="navbar navbar-expand-lg">
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="index.html" >Home</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                                    <a class="dropdown-item" href="latest-result.html">Latest Result</a>
+                                                    <a class="dropdown-item" href="schedule.html">Schedule</a>
+                                                    <a class="dropdown-item" href="bet-slip.html">Bet Slip</a>
+                                                    <a class="dropdown-item" href="login.html">Login</a>
+                                                    <a class="dropdown-item" href="register.html">Register</a>
+                                                </div>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="contact.html">Contact US</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                  </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                       
+            </div>
+        </div>
+        <!-- header end -->
+
+        <!-- breadcrumb begin -->
+        <div class="breadcrumb-bettix betslip-page" style="background: url(img/upcoming-match-bg.jpg); background-size: cover;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="breadcrumb-content">
+                            <h2>Prediction Slip</h2>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    Prediction Slip
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- breadcrumb end -->
+
+        <!-- bet-slip begin -->
+        <div class="bet-slip">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-8">
+                        <div class="bet-slip-content">
+                            <div class="box-heading">
+                                <h4>Singles</h4>
+                                <h4>Stakes & Returns</h4>
+                            </div>
+                            <div>
+                                <div class="different-bet">
+                                    <div class="team-opponent">
+                                        <span class="team">Kaizer Chiefs <span class="versace"><img src="img/vs-icon.png" alt=""></span> Pirates</span>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">Draw</span>
+                                            <span class="bet-price">4.30</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">Straight Win</span>
+                                            <span class="bet-price">4.30</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">BTS</span>
+                                            <span class="bet-price">4.30</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="different-bet">
+                                    <div class="team-opponent">
+                                        <span class="team">Manchester City <span class="versace"><img src="img/vs-icon.png" alt=""></span>Chelsea</span>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">Draw</span>
+                                            <span class="bet-price">4.30</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </div>
+                            <div class="box-heading">
+                                <h4>Multiples</h4>
+                                <h4>Stakes & Returns</h4>
+                            </div>
+                            <div>
+                                <div class="different-bet">
+                                    <div class="team-opponent">
+                                        <span class="team">Mamelodi Sundowns <span class="versace"><img src="img/vs-icon.png" alt=""></span>Supersport United</span>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">Over 1.5</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div>
+                                    <div class="single-bet">
+                                        <button class="remove-element">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                        <div class="left-side">
+                                            <span class="bet-place">Under 1.5</span>
+                                        </div>
+                                        <div class="right-side">
+                                            <div class="bet-stake">
+                                                <form>
+                                                    <input type="text" placeholder="Stake Here. Ex: 2">
+                                                </form>
+                                            </div>
+                                            <span class="bet-returns">4.30</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4">
+                        <div class="bet-slip-sidebar">
+                            <h4 class="title">Prediction summery</h4>
+                            <div class="sidebar-content">
+                                <ul>
+                                    <li>
+                                        <span class="title">Predict No.</span>
+                                        <span class="number">01</span>
+                                    </li>
+                                    <li>
+                                        <span class="title">Total cost</span>
+                                        <span class="number">50.00</span>
+                                    </li>
+                                </ul>
+                                <div class="total-returns">
+                                    <span class="text">
+                                        total returns
+                                    </span>
+                                    <span class="number">
+                                        R4 645
+                                    </span>
+                                </div>
+                                <div class="btn-for-bet">
+                                    <a href="#" class="place-bet-btn">Confirm Bet</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bet-slip end -->
+        
+
+
+       <!-- footer begin -->
+       <div class="footer" id="contact">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-lg-5 col-md-10">
+                    <div class="about-widget">                          
+                        <p>Positive Energy offers you all the best online prediction from every corner of the planet with thousands of online prediction markets.</p>
+                        <div class="social">
+                            <ul>
+                                <li>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a href="#" class="social-icon">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="support">
+                            <ul>
+                                <li>
+                                    <span class="icon">
+                                        <img src="img/svg/email.svg" alt="">
+                                    </span>
+                                    <span class="text">
+                                        <span class="title">Mail Us</span>
+                                        <span class="descr">positive_energy@gmail.com</span>
+                                    </span>
+                                </li>
+                                <li>
+                                    <span class="icon">
+                                        <img src="img/svg/phone-call.svg" alt="">
+                                    </span>
+                                    <span class="text">
+                                        <span class="title">Get In Touch</span>
+                                        <span class="descr">+12 334 5678</span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                    <div class="useful-links">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li>
+                                <a href="#">IN-PLAY</a>
+                            </li>                                                             
+                            <li>
+                                <a href="#">RESULTS</a>
+                            </li>
+                            <li>
+                                <a href="#">Predict now</a>
+                            </li>                                        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3">
+                    <div class="useful-links">
+                        <h3>Connect With Us</h3>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>                                                             
+                            <li>
+                                <a href="#">Service</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>                                                          
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-3">
+                    <div class="useful-links">
+                        <h3>All Sports</h3>
+                        <ul>
+                            <li>
+                                <a href="#">FOOTBALL</a>
+                            </li>
+                            <li>
+                                <a href="#">TENNIS</a>
+                            </li>
+                            <li>
+                                <a href="#">BASKETBALL</a>
+                            </li>
+                            <li>
+                                <a href="#">CRICKET</a>
+                            </li>                              
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="payment-method">
+                                <h6 class="payment-method-title">
+                                    Payment methods are We accept 
+                                </h6>
+                                <div class="all-method">
+                                    <div class="single-method">
+                                          <img src="data:image/jpeg;base64,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">
+                                        </div>
+                                        <div class="single-method">
+                                            <img src="https://cdn.icon-icons.com/icons2/2341/PNG/512/mastercard_payment_method_card_icon_142734.png">
+                                        </div>
+                                        <div class="single-method">
+                                            <img src="https://cdn.icon-icons.com/icons2/1177/PNG/512/visa_82017.png">
+                                        </div>
+                                        <div class="single-method">
+                                            <img src="https://cdn.icon-icons.com/icons2/1177/PNG/512/paypal-p_82004.png">
+                                        </div>
+                                        <div class="single-method">
+                                            <img src="https://uploads-ssl.webflow.com/62cd8cfafedd6a80254f6d18/62ceb51fc87d743d6282a5e4_1V-Logo.svg">
+                                        </div>
+                                        
+                                        <div class="single-method">
+                                            <img src="https://wickeddonuts.co.za/wp-content/uploads/2018/02/Zapper-Logo-White.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer end -->    
+
+
+
+        <!-- copyright footer begin -->
+        <div class="copyright-footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-5 col-md-6 col-lg-6 d-lg-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            <a href="#">positive_energy</a> © 2023. Terms & Conditions Apply.
+                        </p>
+                    </div>
+                    <div class="text-right col-md-6 col-xl-4 col-lg-6 d-xl-flex d-lg-flex d-block align-items-center">
+                        <p class="copyright-text">
+                            Powerd By <a href="https://themeforest.net/user/autworks/portfolio">(positive_energy )</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright footer end -->
+        
+        <!-- jquery -->
+        <!-- <script src="assets/js/jquery.js"></script> -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <!-- bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- owl carousel -->
+        <script src="js/owl.carousel.js"></script>
+        <!-- magnific popup -->
+        <script src="js/jquery.magnific-popup.js"></script>
+        <!-- filterizr js -->
+        <script src="js/jquery.filterizr.min.js"></script>
+        <!-- wow js-->
+        <script src="js/wow.min.js"></script>
+        <!-- clock js -->
+        <script src="js/clock.min.js"></script>
+        <script src="js/jquery.appear.min.js"></script>
+        <script src="js/odometer.min.js"></script>
+        <!-- main -->
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    </body>
+</html>
